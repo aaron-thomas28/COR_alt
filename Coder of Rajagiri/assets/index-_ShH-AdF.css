@@ -1,0 +1,376 @@
+* {
+    font-family: "Jersey 10", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1f1f1f;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+body svg {
+    font-size: 25px;
+    margin: 10px;
+    color: #fff
+}
+
+body svg:hover {
+    color: #fd9c00
+}
+
+table {
+    width: 100%
+}
+
+tr {
+    background-color: #ffffff19
+}
+
+td,
+th {
+    text-align: center;
+    padding: 10px
+}
+
+th {
+    font-weight: 700;
+    background-color: #fff;
+    color: #1f1f1f
+}
+
+label {
+    margin: 10px 20px;
+    font-weight: 700
+}
+
+input {
+    background-color: transparent;
+    color: #fff;
+    border: solid 2px white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-block: 10px
+}
+
+button {
+    background-color: #fff;
+    color: #1f1f1f;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px
+}
+
+img {
+    border-radius: 10px;
+    margin: 10px
+}
+
+#root {
+    padding: 50px;
+    width: 80%
+}
+
+#root>div {
+    width: 100%
+}
+
+h1 {
+    text-align: center
+}
+
+img {
+    max-width: 100px
+}
+
+h1.title {
+    font-size: 3rem
+}
+
+.btn-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #fff;
+    color: #1f1f1f;
+    margin-block: 10px;
+    border-radius: 10px
+}
+
+.btn-add svg {
+    color: #000;
+    padding: 10px;
+    margin: 0
+}
+
+.btn-add svg:hover,
+.btn-add:hover {
+    color: #fd9c00
+}
+
+span {
+    margin: 10px 20px
+}
+
+.title {
+    font-weight: 700
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #f0f8ff;
+
+    /* 1. Allow the body to grow naturally */
+    min-height: 100vh;
+    position: relative;
+    /* 2. Remove the heavy background properties from here */
+}
+
+/* 3. Apply the gradient to a fixed pseudo-element instead */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Puts it behind your content */
+
+    /* Your original gradient */
+    background-image: linear-gradient(to top, #090909, #040404, #080808, #0c0c0c, #0f0f0f, #121212, #151515, #181818, #1c1c1c, #1f1f1f, #232323, #272727);
+
+    /* This ensures the GPU handles the rendering */
+    will-change: transform;
+}
+
+.title {
+    font-size: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 3%
+}
+
+.podium {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5%
+}
+
+.box {
+    width: 300px;
+    height: 350px;
+    background-color: #2f2f2f;
+    box-shadow: #53535426 0 68px 100px;
+    margin: 1% 4%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px
+}
+
+.one,
+.three {
+    margin-top: 20%
+}
+
+.imgpod {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8% auto auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top
+}
+
+.img1 {
+    border: 5px solid silver
+}
+
+.img2 {
+    border: 5px solid gold
+}
+
+.img3 {
+    border: 5px solid #cd7f32
+}
+
+.namepod {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto auto
+}
+
+.rankpod {
+    font-size: 35px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto auto
+}
+
+.rank1 {
+    color: silver
+}
+
+.rank2 {
+    color: gold
+}
+
+.rank3 {
+    color: #cd7f32
+}
+
+.scoretxt {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8% auto auto
+}
+
+.scorepod {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% auto auto;
+    font-weight: 500
+}
+
+.lead-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin-top: 20px
+}
+
+.participant {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #222222;
+    box-shadow: #53535426 0 68px 100px;
+    font-size: 20px
+}
+
+.leadrank {
+    font-size: 26px;
+    font-weight: 600
+}
+
+.leadimg {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top;
+    margin: 0
+}
+
+.leadname {
+    margin-left: 20px
+}
+
+.leadscore {
+    font-weight: 700
+}
+
+@media (min-width: 320px) and (max-width: 800px) {
+    .title {
+        padding-top: 10%
+    }
+
+    .box {
+        margin-bottom: 20px;
+        flex-direction: column
+    }
+
+    .podium {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20%
+    }
+
+    .one,
+    .three {
+        margin-top: 5px
+    }
+
+    .podium :nth-child(1) {
+        order: 2
+    }
+
+    .podium :nth-child(2) {
+        order: 1
+    }
+
+    .podium :nth-child(3) {
+        order: 3
+    }
+
+    .lead-board {
+        row-gap: 10px
+    }
+
+    .participant {
+        font-size: 16px
+    }
+
+    .leadrank {
+        font-size: 18px;
+        margin: 10px 15px
+    }
+
+    .leadimg {
+        width: 40px;
+        height: 40px
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1700px) {
+    .participant {
+        width: 90%
+    }
+}
+
+.playerdetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
