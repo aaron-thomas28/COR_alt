@@ -374,3 +374,7 @@ body::before {
     justify-content: space-between;
     align-items: center
 }
+
+.podium-sem {
+    font-size: 30px;
+}
