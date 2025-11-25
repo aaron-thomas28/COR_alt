@@ -11,7 +11,7 @@
         rel="stylesheet">
 
     <script type="module" crossorigin="" src="/assets/index-klJ1Bmag.js"></script>
-    <link rel="stylesheet" crossorigin="" href="styles.css">
+    <link rel="stylesheet" crossorigin="" href="/assets/styles.css">
 
     <style>
         /* Loading Spinner Style */
@@ -127,7 +127,9 @@
                 <div class="participant">
                     <div class="playerdetails">
                         <span class="leadrank">${rank}</span>
+                        <img class="leadimg" loading="lazy" src="${img}" alt="Profile pic">
                         <span class="leadname">${player.Name}</span>
+                        <span class="list-sem">${player.Sem}</span>
                     </div>
                     <span class="leadscore">${player.Points}</span>
                 </div>
@@ -159,7 +161,3 @@
 </body>
 
 </html>
-
-
-
-
