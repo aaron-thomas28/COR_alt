@@ -50,7 +50,9 @@
         // --- CONFIGURATION ---
         const SHEET_ID = "10FLLK9feza5MinoA-C6-FYdjdG33rMrx_YCFCZIxweE";
         const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=0`;
-        const DEFAULT_IMG = "gold_medal.png";
+        const gold = "gold_medal.png";
+        const silver = "silver_medal.png";
+        const bronze = "bronze_medal.png";
 
         async function initLeaderboard() {
             try {
@@ -91,7 +93,7 @@
 
             container.innerHTML = `
                     <div class="box one">
-                        <img class="imgpod img1" src="${second.Image || DEFAULT_IMG}" alt="profile img">
+                        <img class="imgpod img1" src="${second.Image || silver}" alt="profile img">
                         <span class="namepod">${second.Name}</span>
                         <span class="podium-sem">${second.Sem}</span>
                         <span class="rankpod rank1">2nd</span>
@@ -99,7 +101,7 @@
                         <span class="scorepod">${second.Points}</span>
                     </div>
                     <div class="box two">
-                        <img class="imgpod img2" src="${first.Image || DEFAULT_IMG}" alt="profile img">
+                        <img class="imgpod img2" src="${first.Image || gold}" alt="profile img">
                         <span class="namepod">${first.Name}</span>
                         <span class="podium-sem">${first.Sem}</span>
                         <span class="rankpod rank2">1st</span>
@@ -107,7 +109,7 @@
                         <span class="scorepod">${first.Points}</span>
                     </div>
                     <div class="box three">
-                        <img class="imgpod img3" src="${third.Image || DEFAULT_IMG}" alt="profile img">
+                        <img class="imgpod img3" src="${third.Image || bronze}" alt="profile img">
                         <span class="namepod">${third.Name}</span>
                         <span class="podium-sem">${third.Sem}</span>
                         <span class="rankpod rank3">3rd</span>
@@ -163,6 +165,7 @@
 </body>
 
 </html>
+
 
 
 
