@@ -52,6 +52,7 @@
         const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=0`;
         const DEFAULT_IMG = "gold_medal.png";
         const DEFAULT_IMG1 = "silver_medal.png";
+        const DEFAULT_IMG2 = "bronze_medal.png";
         
         async function initLeaderboard() {
             try {
@@ -88,7 +89,7 @@
             const container = document.getElementById('podium-container');
             const first = data[0] || { Name: "-", Points: "-", Image: DEFAULT_IMG };
             const second = data[1] || { Name: "-", Points: "-", Image: DEFAULT_IMG1 };
-            const third = data[2] || { Name: "-", Points: "-", Image: DEFAULT_IMG };
+            const third = data[2] || { Name: "-", Points: "-", Image: DEFAULT_IMG2 };
 
             container.innerHTML = `
                     <div class="box one">
@@ -108,7 +109,7 @@
                         <span class="scorepod">${first.Points}</span>
                     </div>
                     <div class="box three">
-                        <img class="imgpod img3" src="${third.Image || DEFAULT_IMG}" alt="profile img">
+                        <img class="imgpod img3" src="${third.Image || DEFAULT_IMG2}" alt="profile img">
                         <span class="namepod">${third.Name}</span>
                         <span class="podium-sem">${third.Sem}</span>
                         <span class="rankpod rank3">3rd</span>
@@ -164,3 +165,4 @@
 </body>
 
 </html>
+
