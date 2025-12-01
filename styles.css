@@ -153,8 +153,18 @@ body::before {
     /* Puts it behind your content */
 
     /* Your original gradient */
-    background-image: linear-gradient(to top, #090909, #040404, #080808, #0c0c0c, #0f0f0f, #121212, #151515, #181818, #1c1c1c, #1f1f1f, #232323, #272727);
-
+    background-image: linear-gradient(to top,
+            #1a0029,
+            #26003d,
+            #330052,
+            #410068,
+            #50007f,
+            #5f0096,
+            #6e05ad,
+            #7d10c4,
+            #8d18dc,
+            #9c20f3,
+            #a625fd);
     /* This ensures the GPU handles the rendering */
     will-change: transform;
 }
@@ -180,8 +190,8 @@ body::before {
 .box {
     width: 300px;
     height: 350px;
-    background-color: #2f2f2f;
-    box-shadow: #53535426 0 68px 100px;
+    background-color: #5f0096;
+    box-shadow: #410068 0 68px 100px;
     margin: 1% 4%;
     border-radius: 10px;
     display: flex;
@@ -282,8 +292,8 @@ body::before {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: #222222;
-    box-shadow: #53535426 0 68px 100px;
+    background: #5f0096;
+    box-shadow: #410068 0 68px 100px;
     font-size: 20px
 }
 
@@ -378,6 +388,3 @@ body::before {
 .podium-sem {
     font-size: 20px;
 }
-
-
-
